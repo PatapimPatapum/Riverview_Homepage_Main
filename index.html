@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riverview Caravan Park</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- https://codestitch.app/app/dashboard/stitches/1530?nav=Top%20Dropdown -->
+<!-- ============================================ -->
+<header id="cs-navigation">
+  <div class="cs-container">
+    <!-- Nav Logo -->
+    <a href="#hero" class="cs-logo" aria-label="Back to home">
+      <img src="images/riverview-logo.png" alt="Riverview Caravan Park Logo" class="cs-logo-img">
+    </a>
+
+    <!-- Navigation List -->
+    <nav class="cs-nav" role="navigation" aria-label="Main Navigation">
+      <button class="cs-toggle" aria-label="Mobile menu toggle">
+        <div class="cs-box" aria-hidden="true">
+          <span class="cs-line cs-line1"></span>
+          <span class="cs-line cs-line2"></span>
+          <span class="cs-line cs-line3"></span>
+        </div>
+      </button>
+
+      <div class="cs-ul-wrapper">
+        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+          <li class="cs-li"><a href="#hero" class="cs-li-link cs-active" aria-current="page">Home</a></li>
+          <li class="cs-li"><a href="#accommodations" class="cs-li-link">Accommodations</a></li>
+          <li class="cs-li"><a href="#attractions" class="cs-li-link">Local Attractions</a></li>
+          <li class="cs-li"><a href="#contact" class="cs-li-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <div class="cs-contact-group">
+    <div id="accessibility-menu" class="cs-accessibility-menu" aria-label="Accessibility Options">
+      <button class="cs-accessibility-toggle" aria-label="Open Accessibility Menu" aria-expanded="false">
+        <img src="https://img.icons8.com/ios-filled/50/000000/wheelchair.png" alt="Accessibility Icon" width="20" height="20">
+      </button>
+      <div class="cs-accessibility-options" id="accessibility-options" role="region" aria-label="Accessibility Controls">
+        <button class="cs-text-size" data-size="large" aria-label="Increase Text Size">A+</button>
+        <button class="cs-text-size" data-size="small" aria-label="Decrease Text Size">A-</button>
+        <button class="cs-text-size" data-size="medium" aria-label="Reset Text Size">A</button>
+        <button type="button" class="cs-contrast" aria-label="Toggle High Contrast" aria-pressed="false">High Contrast</button>
+        <button type="button" class="cs-font" aria-label="Toggle Font Style" aria-pressed="false">Readable Font</button>
+      </div>
+    </div>
+    <a href="#" class="cs-button-solid cs-signin-button">Sign In</a>
+    <a href="#" class="cs-button-solid cs-button-accent">Book Now</a>
+  </div>
+
+</header>
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- https://codestitch.app/app/dashboard/stitches/229 -->
+<!-- ============================================ -->
+
+<main id="main-content">
+  <section id="hero-229">
+    <div class="cs-container cs-flex-center">
+      <div class="cs-flex-group">
+        <span class="cs-topper">Riverview Caravan Park Gayndah</span>
+        <h1 class="cs-title">ITS TIME FOR ADVENTURES AND EXPERIENCES</h1>
+        <p class="cs-text">
+          Discover nature, peace, and comfort at Gayndah’s hidden gem
+        </p>
+        <div class="cs-button-group">
+          <a href="#" class="cs-button-solid cs-button" aria-label="Explore Riverview Caravan Park">Explore More</a>
+          <a href="#" class="cs-button-transparent cs-button" aria-label="Learn More about Riverview Caravan Park">
+            <img class="cs-img" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="Play icon" width="17" height="17">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Video -->
+    <div class="cs-picture">
+      <video autoplay muted loop playsinline id="background-video">
+        <source src="images/37088-413229662.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- https://codestitch.app/app/dashboard/stitches/1666 -->
+<!-- ============================================ -->
+
+<section id="services-1666">
+  <div class="cs-container">
+      <div class="cs-flex-wrapper">
+          <div class="cs-image-group">
+              <picture class="cs-picture">
+                  <img loading="lazy" decoding="async"
+                       src="images/Screenshot%202025-05-07%20at%2022.40.19.png"
+                       alt="Scenic riverside camping setup at Riverview Caravan Park"
+                       width="605" height="690">
+              </picture>
+          </div>
+          <div class="cs-content">
+              <div class="cs-text-container">
+                <h2 class="cs-section-title cs-title">Experience Nature and Comfort</h2>
+                <p class="cs-text">
+                    At Riverview Caravan Park, we offer a wide range of amenities and activities to make your stay unforgettable. Explore our scenic views, enjoy riverside camping, and make memories with your loved ones.
+                </p>
+              </div>
+              <ul class="cs-faq-list">
+                <li class="cs-faq-item">
+                  <button class="cs-button cs-hover" aria-expanded="false" aria-controls="dropdown-content-1" onclick="toggleDropdown(this)">
+                    <img class="cs-icon" src="https://img.icons8.com/ios-filled/50/000000/campfire.png" alt="Campfire Icon">
+                    <span class="cs-button-text">Riverside Camping</span>
+                  </button>
+                  <div class="cs-item-content" id="dropdown-content-1">
+                    <p class="cs-item-p">Enjoy a cozy riverside camping experience surrounded by nature.</p>
+                  </div>
+                </li>
+                <li class="cs-faq-item">
+                  <button class="cs-button cs-hover" aria-expanded="false" aria-controls="dropdown-content-2" onclick="toggleDropdown(this)">
+                    <img class="cs-icon" src="https://img.icons8.com/ios-filled/50/000000/swimming.png" alt="Swimming Icon">
+                    <span class="cs-button-text">Swimming Area</span>
+                  </button>
+                  <div class="cs-item-content" id="dropdown-content-2">
+                    <p class="cs-item-p">Relax and cool off in our clean and safe swimming area.</p>
+                  </div>
+                </li>
+                <li class="cs-faq-item">
+                  <button class="cs-button cs-hover" aria-expanded="false" aria-controls="dropdown-content-3" onclick="toggleDropdown(this)">
+                    <img class="cs-icon" src="https://img.icons8.com/ios-filled/50/000000/trail.png" alt="Hiking Icon">
+                    <span class="cs-button-text">Nature Trails</span>
+                  </button>
+                  <div class="cs-item-content" id="dropdown-content-3">
+                    <p class="cs-item-p">Explore our beautiful nature trails perfect for hiking enthusiasts.</p>
+                  </div>
+                </li>
+                <li class="cs-faq-item">
+                  <button class="cs-button cs-hover" aria-expanded="false" aria-controls="dropdown-content-4" onclick="toggleDropdown(this)">
+                    <img class="cs-icon" src="https://img.icons8.com/ios-filled/50/000000/parking.png" alt="Parking Icon">
+                    <span class="cs-button-text">Secure Parking</span>
+                  </button>
+                  <div class="cs-item-content" id="dropdown-content-4">
+                    <p class="cs-item-p">Safe and secure parking for all your vehicles.</p>
+                  </div>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+                              
+<div aria-live="polite" id="accessibility-status" class="visually-hidden"></div>
+
+
+<!-- ============================================ -->
+<!--            Accomadation Section              -->
+<!-- https://codestitch.app/app/dashboard/stitches/1001 -->
+<!-- ============================================ -->
+
+<section id="menu-1001">
+  <div class="cs-container">
+      <div class="cs-content">
+          <h2 class="cs-section-title cs-title">Accommodation</h2>
+          <p class="cs-text">
+              We provide a variety of accommodations to suit your needs, including private cabins to powered and unpowered sites, all in a pleasant environment.
+          </p>
+      </div>
+      <ul class="cs-card-group" role="list">
+          <li class="cs-item">
+              <img src="images/Screenshot 2025-05-08 at 01.28.15.png" alt="Ensuite cabins with private bathroom and air conditioning, Riverview Caravan Park" class="cs-accommodation-img">
+              <div class="cs-info">
+                  <h3 class="cs-h3"><span class="cs-name">Ensuite Cabins</span><span class="cs-price">$85</span></h3>
+                  <p>Fully serviced includes bathroom and aircon</p>
+              </div>
+              <a href="#" class="cs-button-solid"><span class="cs-button-text">View More</span></a>
+          </li>
+          <li class="cs-item">
+              <img src="images/Screenshot 2025-05-08 at 01.28.41.png" alt="Standard cabins with basic kitchenette and amenities, Riverview Caravan Park" class="cs-accommodation-img">
+              <div class="cs-info">
+                  <h3 class="cs-h3"><span class="cs-name">Standard Cabins</span><span class="cs-price">$65</span></h3>
+                  <p>Fully serviced with basic kitchenette</p>
+              </div>
+              <a href="#" class="cs-button-solid"><span class="cs-button-text">View More</span></a>
+          </li>
+          <li class="cs-item">
+              <img src="images/Screenshot 2025-05-08 at 01.28.58.png" alt="Budget lodge rooms with access to shared kitchenette, Riverview Caravan Park" class="cs-accommodation-img">
+              <div class="cs-info">
+                  <h3 class="cs-h3"><span class="cs-name">Budget Lodge Rooms</span><span class="cs-price">$30</span></h3>
+                  <p>Use of shared kitchenette</p>
+              </div>
+              <a href="#" class="cs-button-solid"><span class="cs-button-text">View More</span></a>
+          </li>
+          <li class="cs-item">
+              <img src="images/Screenshot 2025-05-08 at 01.32.51.png" alt="Basic duplex units accommodation at Riverview Caravan Park" class="cs-accommodation-img">
+              <div class="cs-info">
+                  <h3 class="cs-h3"><span class="cs-name">Duplex Units</span><span class="cs-price">$65</span></h3>
+                  <p>Basic unit</p>
+              </div>
+              <a href="#" class="cs-button-solid"><span class="cs-button-text">View More</span></a>
+          </li>
+          <li class="cs-item">
+              <img src="images/Screenshot 2025-05-08 at 01.29.38.png" alt="Simple onsite van accommodation at Riverview Caravan Park" class="cs-accommodation-img">
+              <div class="cs-info">
+                  <h3 class="cs-h3"><span class="cs-name">Onsite Vans</span><span class="cs-price">$30</span></h3>
+                  <p>Simple van accommodation</p>
+              </div>
+              <a href="#" class="cs-button-solid"><span class="cs-button-text">View More</span></a>
+          </li>
+          <li class="cs-item">
+              <img src="images/Screenshot 2025-05-08 at 01.29.25.png" alt="Powered caravan and motorhome sites at Riverview Caravan Park" class="cs-accommodation-img">
+              <div class="cs-info">
+                  <h3 class="cs-h3"><span class="cs-name">Powered Sites</span><span class="cs-price">$28</span></h3>
+                  <p>For caravans/motorhomes</p>
+              </div>
+              <a href="#" class="cs-button-solid"><span class="cs-button-text">View More</span></a>
+          </li>
+          <li class="cs-item">
+              <img src="images/Screenshot 2025-05-08 at 01.29.11.png" alt="Non powered sites for self-sufficient campers at Riverview Caravan Park" class="cs-accommodation-img">
+              <div class="cs-info">
+                  <h3 class="cs-h3"><span class="cs-name">Non Powered Sites</span><span class="cs-price">$24</span></h3>
+                  <p>Self-sufficient campers</p>
+              </div>
+              <a href="#" class="cs-button-solid"><span class="cs-button-text">View More</span></a>
+          </li>
+          <li class="cs-item">
+              <img src="images/tent.png" alt="Basic grassy tent sites for camping at Riverview Caravan Park" class="cs-accommodation-img">
+              <div class="cs-info">
+                  <h3 class="cs-h3"><span class="cs-name">Tent Sites</span><span class="cs-price">$16</span></h3>
+                  <p>Basic grassy tent space</p>
+              </div>
+              <a href="#" class="cs-button-solid"><span class="cs-button-text">View More</span></a>
+          </li>
+      </ul>
+  </div>
+  <!--Static background is in CSS as a tiled pattern-->
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- https://codestitch.app/app/dashboard/stitches/45 -->
+<!-- ============================================ -->
+
+<section id="gallery-45">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-section-title cs-title">Riverview Moments</h2>
+            <p class="cs-text">
+                Experience the beauty of Riverview through our gallery. From scenic landscapes to family moments, capture unforgettable memories.
+            </p>
+        </div>
+        <ul class="cs-image-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="images/Cabins2-1024x683-300x300.jpg" alt="Scenic view of Riverview cabins during sunset" width="346" height="346">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="images/dave-001sm_small-300x300.jpg" alt="Riverview camping spot surrounded by lush greenery and tents" width="346" height="346">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="images/Koala1920-1024x707-300x300.jpg" alt="Koala resting in a tree at Riverview Caravan Park" width="346" height="346">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="images/mainside3_small-1-300x300.jpg" alt="Campfire gathering at Riverview with guests enjoying the evening" width="346" height="346">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="images/Van-Park2-1024x683-300x300.jpg" alt="Caravans parked along nature trails at Riverview Caravan Park" width="346" height="346">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="images/River-1024x576-300x300.jpg" alt="Family having fun by the river at Riverview Caravan Park" width="346" height="346">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="images/Cabins2-1024x683-300x300.jpg" alt="Charming Riverview cabins with scenic backdrop" width="346" height="346">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="images/dave-001sm_small-300x300.jpg" alt="Family enjoying outdoor picnic at Riverview Caravan Park" width="346" height="346">
+                </picture>
+            </li>
+        </ul>
+        <!-- Lightbox Overlay -->
+        <div id="lightbox-overlay">
+          <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous">&larr;</button>
+            <img id="lightbox-image" src="" alt="Gallery Image">
+            <button class="lightbox-next" aria-label="Next">&rarr;</button>
+          </div>
+        </div>
+        <p class="cs-text">
+          Our gallery showcases the best moments from Riverview. Enjoy the views, the memories, and the adventures.
+        </p>
+        <a href="#" class="cs-button-solid cs-button-gallery cs-button-accent" style="display: block; text-align: center;">View More</a>
+    </div>
+
+
+
+  </section>
+</main>
+<!--                   Footer                     -->
+ <!-- https://codestitch.app/app/dashboard/stitches/308 -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-308">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="images/riverview-logo.png" aria-hidden="true" loading="lazy" decoding="async" src="images/riverview-logo.png" alt="Riverview Caravan Park Logo" width=100px height=100px>
+            </a>
+            <p class="cs-text">
+                Nestled on the banks of the Burnett River, Riverview Caravan Park offers riverside camping, cozy cabins, and family-friendly amenities for an unforgettable getaway.
+            </p>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Quick Links</span>
+            </li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#hero" aria-label="Go to Home section">Home</a></li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#services-1666" aria-label="Go to Services section">Services</a></li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#accommodations" aria-label="Go to Accommodations section">Accommodations</a></li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#gallery-45" aria-label="Go to Gallery section">Gallery</a></li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#contact" aria-label="Go to Contact Us section">Contact Us</a></li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Amenities</span>
+            </li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#services-1666" aria-label="Go to Riverside Camping section">Riverside Camping</a></li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#services-1666" aria-label="Go to Swimming Area section">Swimming Area</a></li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#services-1666" aria-label="Go to Nature Trails section">Nature Trails</a></li>
+            <li class="cs-nav-li"><a class="cs-nav-link" href="#services-1666" aria-label="Go to Secure Parking section">Secure Parking</a></li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact Us</span>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="phone" width="24" height="24">
+                <a class="cs-nav-link cs-phone" href="tel:0741581234" aria-label="Call Riverview Caravan Park">(07) 4158 1234</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="email" width="24" height="24">
+                <a class="cs-nav-link cs-email" href="mailto:stay@riverviewcaravanpark.com" aria-label="Email Riverview Caravan Park">stay@riverviewcaravanpark.com</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="pin" width="24" height="24">
+                <a class="cs-nav-link cs-address" href="" target="_blank" rel="noopener" aria-label="View Riverview Caravan Park on map">
+                    22 Riverside Drive,<br> Gayndah QLD 4625
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">© 2025 Riverview Caravan Park – All Rights Reserved</span>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+                                
+                                
