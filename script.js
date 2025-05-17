@@ -94,6 +94,9 @@ function loadAccessibilityPreferences() {
     const accessibilityMenu = document.getElementById('accessibility-menu');
     const content = document.getElementById('main-content');
 
+    if (!fontSize) {
+      setContentFontSize('medium'); // Set default font size to 'A' size
+    }
     if (fontSize && content) {
       content.classList.add(`font-${fontSize}`);
     }
