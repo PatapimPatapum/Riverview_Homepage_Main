@@ -96,6 +96,7 @@ function loadAccessibilityPreferences() {
 
     if (!fontSize) {
       setContentFontSize('medium'); // Set default font size to 'A' size
+      setContentFontSize('medium');
     }
     if (fontSize && content) {
       content.classList.add(`font-${fontSize}`);
@@ -217,6 +218,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function openLightbox(index) {
     currentIndex = index;
     lightboxImage.src = galleryImages[index].src;
+    lightboxImage.style.maxWidth = "90%";
+    lightboxImage.style.maxHeight = "90%";
     overlay.classList.add('active');
   }
   function closeLightbox() {

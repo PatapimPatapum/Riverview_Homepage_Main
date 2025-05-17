@@ -1012,7 +1012,7 @@ body.readable-font {
 }
 #hero-229 .cs-title {
   /* 39px - 61px */
-  font-size: clamp(6rem, 11vw, 9rem) !important;
+  font-size: clamp(3rem, 6vw, 5rem) !important;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.4em;
