@@ -1,29 +1,23 @@
+// Lazy loading for images: add class when loaded for fade-in effect
 document.addEventListener('DOMContentLoaded', function() {
   const lazyImages = document.querySelectorAll('img[loading="lazy"]');
   lazyImages.forEach(img => {
     img.onload = function() {
       img.classList.add('lazy-loaded');
     };
+    // If already loaded (from cache), trigger manually
     if (img.complete && img.naturalHeight !== 0) {
       img.classList.add('lazy-loaded');
     }
   });
 });
 
-// Optimize background video loading further with intersection observer
+// Preload background video after page load
 window.addEventListener('load', function() {
   const video = document.getElementById('background-video');
   if (video) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          video.preload = "auto";
-          video.load();
-          observer.unobserve(video);
-        }
-      });
-    }, { rootMargin: "0px", threshold: 0.25 });
-    observer.observe(video);
+    video.preload = "auto";
+    video.load();
   }
 });
 // add classes for mobile navigation toggling
