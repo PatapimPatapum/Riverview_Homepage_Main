@@ -949,6 +949,16 @@ body.readable-font {
   overflow: hidden;
 }
 
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 #hero-229 .cs-picture video {
   width: 100%;
   height: 100%;
@@ -2396,4 +2406,17 @@ body.high-contrast #hero-229 .cs-picture img {
 /* Rotate arrow when open */
 #services-1666 .cs-faq-item.active .cs-button::after {
   transform: translateY(-50%) rotate(180deg);
+}
+
+/* Lazy Loading Images */
+img[loading="lazy"] {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+img.lazy-loaded {
+  opacity: 1;
 }

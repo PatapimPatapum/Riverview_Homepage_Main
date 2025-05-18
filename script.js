@@ -1,3 +1,25 @@
+// Lazy loading for images: add class when loaded for fade-in effect
+document.addEventListener('DOMContentLoaded', function() {
+  const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+  lazyImages.forEach(img => {
+    img.onload = function() {
+      img.classList.add('lazy-loaded');
+    };
+    // If already loaded (from cache), trigger manually
+    if (img.complete && img.naturalHeight !== 0) {
+      img.classList.add('lazy-loaded');
+    }
+  });
+});
+
+// Preload background video after page load
+window.addEventListener('load', function() {
+  const video = document.getElementById('background-video');
+  if (video) {
+    video.preload = "auto";
+    video.load();
+  }
+});
 // add classes for mobile navigation toggling
 const CSbody = document.body;
 const CSnavbarMenu = document.querySelector("#cs-navigation");
