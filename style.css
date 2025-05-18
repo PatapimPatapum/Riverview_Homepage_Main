@@ -1937,12 +1937,17 @@ body.readable-font {
         align-items: flex-start;
         flex-direction: column;
         gap: 0.75rem;
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
+        max-width: 200px;
     }
     #cs-footer-308 .cs-nav-li {
         list-style: none;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        margin-bottom: 0.5rem;
     }
     #cs-footer-308 .cs-header {
         font-size: 1rem;
@@ -1960,8 +1965,9 @@ body.readable-font {
         line-height: 1.5em;
         color: var(--bodyTextColorWhite);
         position: relative;
-        display: inline-block;
         transition: color 0.3s;
+        display: block;
+        text-align: left;
     }
     #cs-footer-308 .cs-nav-link:before {
         /* underline */
