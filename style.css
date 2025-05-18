@@ -1,4 +1,5 @@
-/* Lightbox Styles */
+
+
 #lightbox-overlay {
   display: none;
   position: fixed;
@@ -1021,17 +1022,18 @@ body.readable-font {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 #hero-229 .cs-title {
-  font-size: clamp(2.5rem, 5vw, 4rem) !important;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  line-height: 1.2em;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
   text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  will-change: opacity, transform; /* Optimize for LCP */
+  font-family: 'Poppins', sans-serif;
   width: 90%;
   max-width: 800px;
   margin: 0 auto clamp(1.5rem, 3vw, 2rem) 0;
-  color: #ffffff;
   position: relative;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 #hero-229 .cs-text {
   /* 16px - 20px */
@@ -1732,24 +1734,6 @@ body.readable-font {
     max-width: 100%;
     max-height: 250px;
 }
-/* Gallery Section Button Styles */
-#gallery-45 .cs-button-solid {
-  font-size: 0.75rem !important; /* Smaller font size */
-  padding: 0.3em 0.6em !important; /* Reduced padding */
-  min-width: 6rem !important; /* Smaller minimum width */
-  height: auto !important;
-  border-radius: 6px !important; /* Slightly smaller border radius */
-  background-color: #229954 !important; /* Ensure consistent color */
-  color: #ffffff !important;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s;
-}
-
-#gallery-45 .cs-button-solid:hover {
-  background-color: #1e8449 !important;
-}
 
 
 /* Tablet - 768px */
@@ -1783,39 +1767,30 @@ body.readable-font {
 
 
     #gallery-45 .cs-button-gallery {
-      display: block;
-      margin: 0 auto 2rem;
-      text-align: center;
+
+    font-size: 1rem !important;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #229954;
+    color: #ffffff;
+    padding: 0.5em 1em !important;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+
     }
 
 /* (white-space and text-align for .cs-text are handled in the main rule) */
 
 
 
-    #gallery-45 .cs-button-solid,
-    #gallery-45 button.cs-button-solid,
-    #gallery-45 a.cs-button-solid {
-        background-color: #229954;
-        color: #ffffff;
-        border-radius: 8px;
-        text-decoration: none;
-        padding: 0.5em 1em !important;
-        font-size: 1rem;
-        font-weight: 700;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 0.5px;
-        transition: background-color 0.3s;
-        display: inline-block;
-        border: none;
-        cursor: pointer;
-        margin-top: 1rem;
-    }
-
-    #gallery-45 .cs-button-solid:hover,
-    #gallery-45 button.cs-button-solid:hover,
-    #gallery-45 a.cs-button-solid:hover {
-        background-color: #1e8449;
-    }
+#gallery-45 .cs-button-solid:hover,
+#gallery-45 button.cs-button-solid:hover,
+#gallery-45 a.cs-button-solid:hover {
+  background-color: #1e8449;
+  color: #ffffff;
+  border-color: #1e8449;
+}
 
 /* Navigation Buttons */
 #cs-navigation .cs-contact-group {
@@ -2419,4 +2394,4 @@ img[loading="lazy"] {
 
 img.lazy-loaded {
   opacity: 1;
-}
+}    
