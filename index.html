@@ -10,7 +10,8 @@
   <link rel="dns-prefetch" href="https://csimg.nyc3.cdn.digitaloceanspaces.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Riverview Caravan Park</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 </head>
 
 <body>
@@ -75,7 +76,7 @@
     <div class="cs-container cs-flex-center">
       <div class="cs-flex-group">
         <span class="cs-topper">Riverview Caravan Park Gayndah</span>
-        <h1 class="cs-title">ITS TIME FOR ADVENTURES AND EXPERIENCES</h1>
+        <h1 class="cs-title" style="font-display: swap;">ITS TIME FOR ADVENTURES AND EXPERIENCES</h1>
         <p class="cs-text">
           Discover nature, peace, and comfort at Gayndah’s hidden gem
         </p>
@@ -91,9 +92,9 @@
 
     <!-- Background Video (Cloudflare Stream) -->
     <div class="cs-picture">
-      <video autoplay muted loop playsinline preload="metadata" id="background-video">
-        <source src="images/37088-413229662-sjq1cc.hevc-1.mov" type="video/mp4">
-        Your browser does not support the video tag.
+      <video autoplay muted loop playsinline preload="none" id="background-video">
+          <source src="images/37088-413229662-sjq1cc.hevc-1.mov" type="video/mp4">
+          Your browser does not support the video tag.
       </video>
     </div>
   </section>

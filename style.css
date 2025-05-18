@@ -78,6 +78,22 @@ html, body {
 /*    Accessibility Styles   */
 /* -------------------------- */
 
+/* Font-face optimization */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins'), url('https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfedw.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Poppins Bold'), url('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlEA.woff2') format('woff2');
+  font-display: swap;
+}
+
 /* Accessibility Menu Styles - Desktop */
 #accessibility-menu {
   position: relative;
